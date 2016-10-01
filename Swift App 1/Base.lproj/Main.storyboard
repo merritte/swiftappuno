@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,16 +30,38 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJc-xL-VeM"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U99-Q3-GFk">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUy-FG-KCg">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PHZ-yg-A6P" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="1IL-du-2u8"/>
+                            <constraint firstItem="cUy-FG-KCg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="3Wm-Vp-0l2"/>
+                            <constraint firstItem="U99-Q3-GFk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="6Qn-Ce-9yb"/>
                             <constraint firstItem="46R-jg-Ykh" firstAttribute="top" secondItem="PHZ-yg-A6P" secondAttribute="bottom" constant="9" id="IVd-5T-RK9"/>
+                            <constraint firstItem="cUy-FG-KCg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LfZ-z4-KB2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U99-Q3-GFk" secondAttribute="trailing" constant="50" id="LgI-8g-Mx6"/>
+                            <constraint firstItem="U99-Q3-GFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRb-Vw-aUB"/>
+                            <constraint firstItem="U99-Q3-GFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S9A-W7-kOq"/>
                             <constraint firstItem="PHZ-yg-A6P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YJb-uB-Mqu"/>
+                            <constraint firstItem="U99-Q3-GFk" firstAttribute="top" secondItem="46R-jg-Ykh" secondAttribute="bottom" constant="54" id="hIE-aZ-R8V"/>
+                            <constraint firstItem="cUy-FG-KCg" firstAttribute="top" secondItem="U99-Q3-GFk" secondAttribute="bottom" constant="50" id="rPi-BL-bfd"/>
+                            <constraint firstItem="U99-Q3-GFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="s1C-JE-jeB"/>
                             <constraint firstItem="46R-jg-Ykh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xXB-C7-V8c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cUy-FG-KCg" secondAttribute="trailing" constant="50" id="xz2-PB-PZK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="Text1" destination="U99-Q3-GFk" id="yPl-cT-Gsq"/>
+                        <outlet property="Text2" destination="cUy-FG-KCg" id="eUz-sS-SXK"/>
                         <outlet property="theLabel" destination="PHZ-yg-A6P" id="isf-OC-KtZ"/>
                     </connections>
                 </viewController>
